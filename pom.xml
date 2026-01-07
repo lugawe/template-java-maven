@@ -12,14 +12,16 @@
     <name>template-java-maven</name>
 
     <properties>
-        <!-- project -->
-        <encoding>UTF-8</encoding>
+        <!-- general -->
+        <project.encoding>UTF-8</project.encoding>
         <java.version>25</java.version>
         <java.mainClass>template.maven.App</java.mainClass>
         <!-- dependencies -->
         <junit-jupiter.version>6.0.2</junit-jupiter.version>
+        <!-- code style -->
+        <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
         <!-- maven plugins -->
-        <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+        <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
@@ -55,22 +57,25 @@
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>${spotless-maven-plugin.version}</version>
                 <configuration>
                     <pom>
                         <includes>
                             <include>pom.xml</include>
                         </includes>
                         <sortPom>
-                            <encoding>${encoding}</encoding>
+                            <encoding>${project.encoding}</encoding>
                             <nrOfIndentSpace>4</nrOfIndentSpace>
                         </sortPom>
                     </pom>
                     <java>
-                        <palantirJavaFormat/>
+                        <palantirJavaFormat>
+                            <version>2.83.0</version>
+                        </palantirJavaFormat>
                         <importOrder>
                             <order>java,jakarta,javax</order>
                         </importOrder>
+                        <forbidModuleImports/>
                     </java>
                 </configuration>
             </plugin>
