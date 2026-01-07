@@ -14,7 +14,7 @@
     <properties>
         <!-- project -->
         <encoding>UTF-8</encoding>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
         <java.mainClass>template.maven.App</java.mainClass>
         <!-- dependencies -->
         <junit-jupiter.version>6.0.2</junit-jupiter.version>
@@ -72,13 +72,6 @@
                             <order>java,jakarta,javax</order>
                         </importOrder>
                     </java>
-                    <yaml>
-                        <includes>
-                            <include>**/*.yml</include>
-                            <include>**/*.yaml</include>
-                        </includes>
-                        <jackson/>
-                    </yaml>
                 </configuration>
             </plugin>
 

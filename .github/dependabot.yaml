@@ -5,4 +5,7 @@ updates:
   directory: "/"
   schedule:
     interval: "daily"
+  labels:
+  - "dependencies"
+  - "maven"
   open-pull-requests-limit: 10
