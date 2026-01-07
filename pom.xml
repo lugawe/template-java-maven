@@ -17,7 +17,7 @@
         <java.version>21</java.version>
         <java.mainClass>template.maven.App</java.mainClass>
         <!-- dependencies -->
-        <junit-jupiter.version>6.0.1</junit-jupiter.version>
+        <junit-jupiter.version>6.0.2</junit-jupiter.version>
         <!-- maven plugins -->
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
