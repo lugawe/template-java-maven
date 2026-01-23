@@ -19,7 +19,7 @@
         <!-- dependencies -->
         <junit-jupiter.version>6.0.2</junit-jupiter.version>
         <!-- code style -->
-        <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
+        <spotless-maven-plugin.version>3.2.0</spotless-maven-plugin.version>
         <!-- maven plugins -->
         <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
